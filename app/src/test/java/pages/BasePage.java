@@ -44,7 +44,27 @@ public class BasePage {
     public void clickElement(String locator){//DADO XPATH VA Y SI LOCALIZA DARA CLICK
         find(locator).click();
     }
-    public void write(String locator, String txt){
+    public void writename(String locator, String txt){
+        find(locator).clear();
+        find(locator).sendKeys(txt);
+    }
+    public void writeemail(String locator, String txt){
+        find(locator).clear();
+        find(locator).sendKeys(txt);
+    }
+    public void writeneighborhood(String locator, String txt){
+        find(locator).clear();
+        find(locator).sendKeys(txt);
+    }
+    public void writeentersubject(String locator, String txt){
+        find(locator).clear();
+        find(locator).sendKeys(txt);
+    }
+    public void writeMessage(String locator, String txt){
+        find(locator).clear();
+        find(locator).sendKeys(txt);
+    }
+    public void writesend(String locator, String txt){
         find(locator).clear();
         find(locator).sendKeys(txt);
     }
